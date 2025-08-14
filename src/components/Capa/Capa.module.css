@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
+
+.secao_capa {
+    background-image: url('/banner.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    display: flex;
+    font-family: 'Josefin Sans', sans-serif;
+    justify-content: flex-end;
+    padding: 0 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 700px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.texto h2 {
+    font-size: 40px;
+    color: #683322;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-family: 'Piazzolla', serif;
+}
+
+.texto h1 {
+    font-size: 65px;
+    color: #F08080;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.textobox {
+    background-color: #f7f7f7be; 
+    padding: 20px 30px;
+    border-radius: 60px;
+    display: inline-block;
+    text-align: right;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+    .texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    .texto h2 {
+        font-size: 24px;
+    }
+
+    .texto h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto h2 {
+        font-size: 20px;
+    }
+
+    .texto h1 {
+        font-size: 32px;
+    }
+}
