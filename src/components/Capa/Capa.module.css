@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap');
 
 .secao_capa {
-    background-image: url('/banner.png');
+    background-image: url('/banner1.png');
     height: 90vh;
     background-size: cover;
     background-position: center right;
@@ -21,6 +21,7 @@
     align-items: center;
     height: 100%;
     max-width: 700px;
+    text-align: right;
     animation: fadeInUp 1s ease-in-out;
 }
 
@@ -36,35 +37,28 @@
 }
 
 .texto h2 {
-    font-size: 40px;
-    color: #683322;
+    font-size: px;
+    color: #351910;
     font-weight: 400;
     margin-bottom: 10px;
     font-family: 'Piazzolla', serif;
 }
 
 .texto h1 {
-    font-size: 65px;
-    color: #F08080;
+    font-size: 46px;
+    color: #c27a73;
     margin: 0;
     font-weight: 700;
     font-family: 'Josefin Sans', sans-serif;
-    margin-bottom: 10px;
-}
-
-.textobox {
-    background-color: #f7f7f7be; 
-    padding: 20px 30px;
-    border-radius: 60px;
-    display: inline-block;
-    text-align: right;
 }
 
 /*Responsividade*/
 @media (max-width: 768px) {
     .texto {
-        align-items: center;
-        text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
     }
 
     .texto h2 {
