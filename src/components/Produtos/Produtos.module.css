@@ -1,0 +1,144 @@
+.produto {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulos {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.titulos h2 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  color: #683322;
+}
+
+.titulos p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 25px
+}
+
+.doce_img {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:25px;
+  margin-top: 25px;
+}
+
+.card_doce picture {
+  background: #fff;
+  border-radius: 130px; 
+  overflow: hidden;    
+  justify-content: center;
+}
+
+
+.card_doce picture img {
+  max-width: 100%;
+  height: 250px; 
+  object-fit: contain; 
+  border-radius: 130px;
+  transition: 0.3s ease-in-out;
+}
+
+.card_doce {
+  position: relative;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+};
+
+.card_doce:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(25, 21, 82, 0.432);
+  border-color: #ddd;
+}
+
+.card_doce h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+.card_doce .preco {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: black;
+}
+
+.card_doce .botao {
+  margin-top: 15px;
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.card_doce .botao:hover {
+  background: #844530;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.card_doce picture img:hover {
+  transform: scale(1.1);
+}
+
+.card_doce .selo, 
+.card_doce .seloNovo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 20px;
+}
+
+.card_doce .selo {
+  background: #f0c14b;
+  color: #111;
+}
+
+.card_doce .seloNovo {
+  background: #bd1919;
+  color: #fff;
+}
+
+/*responsividade*/
+@media (max-width: 768px) {
+  .card_img {
+    grid-template-columns: 1fr;
+}
+
+.titulos h2 {
+  font-size: 2.5rem; 
+}
+
+.titulos p {
+  font-size: 1rem;
+}
+
+.card_doce picture img {
+  height: 150px
+  }
+}
